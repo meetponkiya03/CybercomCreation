@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    gap : 1rem;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border : 3px solid white;
+    box-shadow: 1px 1px black,-1px -1px black;
+}
+.img
+{
+    background-color: black;
+    color: white;
+    height: 315px;
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caption
+{
+    border: 1px solid black;
+    width: 213.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color : rgb(232, 228, 228);
+}
+.paragraph
+{
+    width : 57rem;
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 1px solid burlywood;
+}
