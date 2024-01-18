@@ -1,0 +1,96 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  :root 
+  {
+    --table-header: #ccfdcd;
+    --color1: #cbe5fe;
+    --color2: #ffffff;
+    --color3: #ffcccb;
+    --color4: #fffecd;
+  }
+  
+  .center 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  table 
+  {
+    width: 55%;
+  }
+  
+  table,
+  th,
+  td 
+  {
+    text-align: start;
+    border: 1px solid black;
+  }
+  
+  thead tr 
+  {
+    background-color: var(--table-header);
+  }
+  
+  tbody tr th 
+  {
+    background-color: var(--color1);
+  }
+  
+  tr td:nth-child(2) 
+  {
+    background-color: var(--color2);
+  }
+  
+  tr td:nth-child(3) 
+  {
+    background-color: var(--color3);
+  }
+  
+  tr td:nth-child(4) 
+  {
+    background-color: var(--color4);
+  }
+  
+  td,
+  th 
+  {
+    padding: 5px;
+    vertical-align: top;
+  }
+  
+  ul 
+  {
+    padding-left: 20px;
+  }
+  
+  li 
+  {
+    padding-left: 20px;
+  }
+  
+  .cmp 
+  {
+    width: 20%;
+  }
+  
+  .clb 
+  {
+    width: 40%;
+  }
+  
+  .cel 
+  {
+    width: 15%;
+  }
+  
+  .application 
+  {
+    width: 25%;
+  }
