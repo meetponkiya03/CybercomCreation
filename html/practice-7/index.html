@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice-7</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="Success.html" class="form">
+            
+            <fieldset class="fieldset">
+                   <legend>Your Address</legend>
+                   <table class="fields-1">
+                    <tr>
+                        <td>First name</td>
+                        <td><input type="text" name="txtFirstname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="txtLastname"></td>
+                    </tr>
+                    <tr>
+                        <td>Street</td>
+                        <td><input type="text" name="txtStreet"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" name="txtCity"></td>
+                    </tr>
+                   </table>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Additional details</legend>
+                <table class="fields-2">
+                 <tr>
+                     <td>Biography</td>
+                     <td><textarea name="txtBio" id="" cols="20" rows="0"></textarea></td>
+                 </tr>
+                 <tr>
+                     <td>Image</td>
+                     <td><input type="file" name="img"></td>
+                 </tr>
+                 <tr>
+                     <td>Age Group</td>
+                     <td><input type="number" min="0" max="9" placeholder="0 to 9 Years"></td>
+                 </tr>
+                </table>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Interests</legend>
+                <table class="fields-3">
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>
+                            <select class="transport" size="4">
+                                <option>Playing soccer</option>
+                                <option>Dancing</option>
+                                <option>Gardening</option>
+                                <option>Watching movies</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favourit Car?</td>
+                        <td>
+                            <select class="transport">
+                                <option>Volvo</option>
+                                <option>Bus</option>
+                                <option>Ship</option>
+                                <option>Airboat</option>
+                                <option>Hovecraft</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favourit public transport?</td>
+                        <td>
+                            <select class="transport" size="4">
+                                <optgroup   optgroup label="Ground">
+                                <option>Train</option>
+                                <option>Bus</option>
+                                </optgroup>
+                                <optgroup label="Water">
+                                <option>Ship</option>
+                                <option>Airboat</option>
+                                <option>Hovecraft</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        <div class="btn">
+            <div class="btn-submit">
+                <input type="submit" value="submit"><br>
+            </div>
+            <div class="btn-reset">
+                <input type="reset" value="reset"><br>
+            </div>
+        </div> 
+        </form>
+    </body>
+</html>
