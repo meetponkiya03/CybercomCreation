@@ -3,8 +3,38 @@
     <head>
         <title>practice-5</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     </head>
     <body>
-        
+        <div class="img">
+            <img src="./assets/photo.png" alt="img">
+        </div>
+            <form class="form">
+                <div class="input-icons">
+                    <i class="fa-regular fa-user"></i>
+                    <input class="input-field" type="text" placeholder="First Name">
+                </div>
+                <div class="input-icons">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input class="input-field" type="email" placeholder="Eg.example@email.com">
+                </div>
+                <div class="input-icons">
+                    <i class="fa-solid fa-mobile"></i>
+                    <input class="input-field" type="tel" placeholder="Eg. +1 800 000000">
+                </div>
+                <div class="textarea">
+                    <i class="fa-regular fa-comment"></i>
+                    <textarea placeholder="your comments..."></textarea>
+                </div>
+                <div class="submitbtn">
+                    <input type="submit" value="SEND NOW" onclick="clickalert()"/>
+                </div>
+            </form>
+            <script>
+                function clickalert()
+                {
+                    alert("Your request has been submitted !");
+                }
+            </script>
     </body>
 </html>

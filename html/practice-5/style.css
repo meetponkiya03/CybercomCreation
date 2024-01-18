@@ -3,3 +3,58 @@
     margin: 0px;
     padding: 0px;
 }
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 222, 237);
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 0.3rem;
+}
+.img
+{
+    margin-top: 100px;
+}
+.input-field 
+{
+    width: 400px;
+    padding: 10px 10px 10px 50px;
+    
+}
+
+.input-icons i 
+{
+    position: absolute;
+    padding: 10px 0px 0px 20px;
+}
+.submitbtn input
+{
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 120px;
+    font-size:small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color:rgb(152, 76, 223);
+    box-shadow: rgba(152, 76, 223, 0.50) 0px 5px 15px;
+}
+textarea
+{
+    width: 420px;
+    height: 100px;
+    padding: 10px 0px 0px 40px;
+}
+.textarea i
+{
+    position: absolute;
+    padding: 12px 0px 0px 20px; 
+}
