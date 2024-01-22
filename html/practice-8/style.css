@@ -29,10 +29,10 @@
 }
 .btn{
     display: flex;
-    gap: 2rem;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+    gap: 2rem;
 }
 .btn input{
     width: 120px;
