@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bookingform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.PersonalDetails{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.PersonalDetails legend{
+    font-size: 20px;
+}
+.input-group lable{
+    font-size: 20px;
+}
+.input-group input{
+    height: 30px;
+}
+.input-group{
+    padding: 20px;
+}
+.BookingDetails{
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.BookingDetails legend{
+    font-size: 20px;
+}
+.BookingDetails input{
+    height: 30px;
+}
+.button
+{
+    margin: auto;
+}
+.button input{
+    padding: 5px;
+    width: 120px;
+}
+.error{
+    color: red;
+}
