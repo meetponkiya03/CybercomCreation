@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding: 0px 0px 0px 15px; 
+}
+.section table{
+    height: 230px;
+}
+.section table td{
+    padding: 0px 0px 0px 0px;
+    text-align: right; 
+}
+.Container{
+    height: 100%;
+    background-color: rgb(216, 209, 200);
+    width: 50vw;
+    border: 2px solid black;
+}
+.btn{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.btn input{
+    width: 120px;
+    background-color: aqua;
+    border-radius: 30px;
+    padding: 5px;
+}

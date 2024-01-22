@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice-8</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="Container">
+                <form action="Information.php">
+                    <section class="section">
+                        <h3>Persinal Information</h3>
+                        <table border="1">
+                            <tr>
+                                <td>First Name:</td>
+                                <td><input type="text" name="txtFirstname"></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name:</td>
+                                <td><input type="text" name="txtLastname"></td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth:</td>
+                                <td>
+                                    <select name="month" id="month">
+                                        <option value="">Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select>
+                                        <option name="Day">Day</option>
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select name="year">
+                                        <option value="">Year</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Choose Gender:</td>
+                                <td>
+                                    <select>
+                                        <option value="male">Choose a Gender</option>
+                                        <option value="male">male</option>
+                                        <option value="female">female</option>
+                                        <option value="other">other</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <h3>Account Information</h3>
+                            <table border="1">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="email" name="txtEmail"></td>
+                                </tr>
+                                <tr>
+                                    <td>Re-type Email:</td>
+                                    <td><input type="email" name="Re-type"></td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td><input type="password" name="Pass"></td>
+                                </tr>
+                                <tr>
+                                    <td>Re-type Password:</td>
+                                    <td><input type="password" name="Pass"></td>
+                                </tr>
+                                <tr>
+                                    <td>Sequrity question:</td>
+                                    <td>
+                                        <Select name="question">
+                                            <option value="">Choose a Sequrity question</option>
+                                            <option value="How are you?">How are you?</option>
+                                            <option value="">are you Okay?</option>
+                                        </Select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sequrity answer</td>
+                                    <td><input type="text" name="txtsequrityans"><br></td>
+                                </tr>
+                            </table>
+                        <h3>Contact Information</h3>
+                            <table border="1">
+                                <tr>
+                                    <td>Address:</td>
+                                    <td><input type="text" name="address"></td>
+                                </tr>
+                                <tr>
+                                    <td>City:</td>
+                                    <td><input type="text" name="address"></td>
+                                </tr>
+                                <tr>
+                                    <td>State:</td>
+                                    <td>
+                                        <select name="state">
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Panjab">Panjab</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Bihar">Bihar</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Zip Code:</td>
+                                    <td>
+                                        <input type="text" name="code">
+                                        <input text="text" name="optional" placeholder="Optional">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td>
+                                        <input type="tel" maxlength="10">
+                                        <select>
+                                            <option value="Mobile">Mobile</option>
+                                            <option value="TelePhone">TelePhone</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="btn">
+                                <input type="submit" value="submit">
+                                <input type="reset" value="reset">
+                            </div>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
