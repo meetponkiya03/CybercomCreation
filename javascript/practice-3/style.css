@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+}
+.btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.btn input{
+    width: 120px;
+    background-color: green;
+}
