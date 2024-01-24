@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pr-4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form" class="simple-form">
+      <div class="container">
+        <div class="inputgroup">
+          <label for="name">Name:</label>
+          <input type="text" id="txtname" name="txtname"/>
+        </div>
+        <div class="inputgroup">
+          <label for="email">Email:</label>
+          <input type="email" id="txtemail" name="txtemail" />
+        </div>
+        <div class="inputgroup">
+          <label for="email">Mobile No:</label>
+          <input type="tel" id="txtnum" name="txtnum" maxlength="10" />
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script>
+      jQuery("#form").validate({
+        rules: {
+          txtname: "required",
+          txtemail: {
+            required: true,
+            email: true,
+          },
+          txtnum: {
+            required: true,
+            maxlength: 10,
+          },
+        },
+        messages: {
+          txtname: "Please enter your name",
+          txtemail: "Please enter valid email",
+          txtnum: "Please enter valid number",
+        },
+      });
+    </script>
+  </body>
+</html>
