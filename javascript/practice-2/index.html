@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><title>pr-2</title></head>
+    <body>
+        <div class="container">
+            <input type="text" name="txtItem" id="txtItem">
+            <input type="button" value="additem" id="change" onclick="appenditem()">
+            <input type="button" value="removeitem" id="change" onclick="removeitem()">
+        </div>
+        <ul id="list"></ul>
+        <script>
+            // for add item
+            function appenditem(){
+                var a = document.getElementById('list');
+                var txtItem = document.getElementById("txtItem");
+                var li = document.createElement("li");
+                li.setAttribute('item', txtItem.value);
+                li.appendChild(document.createTextNode(txtItem.value));
+                a.appendChild(li);
+            }
+
+            // for remove item
+
+            function removeitem(){
+                var a = document.getElementById("list");
+                var txtItem = document.getElementById("txtItem");
+                var item = document.getElementById(txtItem.value);
+                a.removeChild(item);
+            }
+        </script>
+    </body>
+</html>
