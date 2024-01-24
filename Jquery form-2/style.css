@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter,sans-serif;
+}
+.formContainer{
+   background-color:white;
+   height: 520vh;
+   width: 50vw;
+   margin: 100px auto;
+   border: 1px solid black;
+}
+.headding{
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+    font-family: Inter,sans-serif;
+    border-bottom: 1px solid black;
+}
+.headding p{
+    padding: 40px 0px 40px 20px;
+}
+.inputgroup{
+    padding: 50px 0px 0px 50px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.GenderSelect{
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column; 
+}
+.GenderSelect select{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px ;
+}
+.inputfield input{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px ;
+}
+.inputfield{
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column; 
+}
+.dob select{
+    width: 12vw;
+    height: 5vh;
+    border-radius: 5px ;    
+}
+.form-title p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 50px 0px 16px 0px;
+}
+.form-title{
+    
+    border-bottom: 1px solid black;
+    width: 45vw;
+    margin: auto;
+}
+.txtarea{
+    margin-top: 20px;
+}
+.secondpart{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.chkbox{
+    display: flex;
+    gap:0.5rem;
+}
+.chkbox input{
+    width: 30px;
+}
+.main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.submitbtn input{
+    background-color: green;
+    width: 200px;
+    color: white;
+    padding: 10px;
+}
+.quecontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0px 0px 0px 50px;
+}
+.quecontainer lable{
+    padding: 0px 0px 0px 10px;
+    font-weight: 600;
+}
+.optgroup{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 5px;
+}
+.optgroup input{
+    width: 30px;
+}
+.error{
+    color: red;
+}

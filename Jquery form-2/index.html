@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form-2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="formContainer">
+            <div class="headding"><p>General Patient Information</p></div>
+            <div class="form-field">
+                <form id="Patientform">
+                    <div class="inputgroup">
+                        <label>Patient Gender*</label>
+                        <div class="GenderSelect">  
+                            <select name="ddgender"> 
+                                <option value="">Please Select</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <label>Patient Name*</label>
+                        <div class="inputfield">
+                           <input type="text" name="txtFirstname" placeholder="first name">
+                           <input type="text" name="txtLastname" placeholder="last name">
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <label>Patient Birthdate*</label>
+                        <div class="dob">
+                            <select name="month">
+                                <option value="">Please select a month</option>
+                                <option value="january">january</option>
+                                <option value="fabuary">fabuary</option>
+                                <option value="march">march</option>
+                                <option value="april">april</option>
+                                <option value="may">may</option>
+                                <option value="june">june</option>
+                                <option value="july">july</option>
+                                <option value="auguest">auguest</option>
+                                <option value="septmber">septmber</option>
+                                <option value="october">october</option>
+                                <option value="november">november</option>
+                                <option value="december">december</option>
+                            </select>
+                            <select name="day" id="">
+                                <option value="">Please select a Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="year" id="">
+                                <option value="">Please select a Year</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>   
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <label>Patient Height (cm's)*</label>
+                        <div class="inputfield">
+                           <input type="text" name="txtHeight" placeholder="ex:176">
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <label>Patient Weight (kg's)*</label>
+                        <div class="inputfield">
+                           <input type="text" name="txtWeight" placeholder="ex:70">
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <label>Patient E-mail*</label>
+                        <div class="inputfield">
+                           <input type="email" name="txtEmail" placeholder="ex:myname@example.com">
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <label>Reason for seeing the doctor:*</label>
+                        <div class="inputfield">
+                           <input type="text" name="txtReason">
+                        </div>
+                    </div>
+                    
+                    <div class="form-title"><p>Patient Medical History</p></div>
+                    <div class="secondpart">
+                        <div class="inputgroup">
+                            <label>Please list any drug allergies</label>
+                            <div class="txtarea">
+                               <textarea name="txtdrug" id="" cols="100" rows="10"></textarea>
+                            </div>
+                        </div>  
+                        <div class="inputgroup">
+                            <label>Have you ever had (Please check all that apply)</label>
+                            <div class="main">
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                                <div class="chkbox">
+                                    <input type="checkbox" name="chkanemiya" value="Anemia">
+                                    <label>Anemia</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputgroup">
+                            <label>Other illnesses:</label>
+                            <div class="inputfield">
+                               <input type="text" name="txtReason">
+                            </div>
+                        </div>
+                        <div class="inputgroup">
+                            <label>Please list any Operations and Dates of Each</label>
+                            <div class="txtarea">
+                               <textarea name="txtdrug" id="" cols="100" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="inputgroup">
+                            <label>Please list your Current Medications</label>
+                            <div class="txtarea">
+                               <textarea name="txtdrug" id="" cols="100" rows="10"></textarea>
+                            </div>
+                        </div>
+                    <div class="form-title"><p>Healthy & Unhealthy Habits</p></div>
+                    <div class="quecontainer">
+                        <div class="quegroup">
+                            <lable>Exercise</lable>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>Never</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>1-2 days</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>3-4 days</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>5+ days</label>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="quecontainer">
+                        <div class="quegroup">
+                            <lable>Eating following a diet</lable>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>I have a loose diet</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>i have a strict diet</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>i dont have a diet plan</label>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="quecontainer">
+                        <div class="quegroup">
+                            <lable>Alcohol Consumption</lable>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>i dont drink</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>1-2 glasses/day</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>3-4 glasses/day</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>5+ glasses/day</label>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="quecontainer">
+                        <div class="quegroup">
+                            <lable>Caffeine Consumption</lable>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>i dont drink</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>1-2 cups/day</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>3-4 cups/day</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>5+ cups/day</label>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="quecontainer">
+                        <div class="quegroup">
+                            <lable>Do you smoke?</lable>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>no</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>0-1 packs/day</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>1-2 packs/day</label>
+                            </div>
+                            <div class="optgroup">
+                                <input type="radio" name="answer">
+                                <label>2+ packs/day</label>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="inputgroup">
+                        <label>Please list any drug allergies</label>
+                        <div class="txtarea">
+                           <textarea name="txtdrug" id="" cols="100" rows="10"></textarea>
+                        </div>
+                    </div> 
+                    <div class="submitbtn">
+                        <input type="submit" value="submit">
+                    </div>  
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
