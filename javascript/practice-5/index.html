@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pr-5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <div class="image-container">
+          <img src="./assets/tree.jpg" alt="img" id="treeImg"/>
+          <button onclick="updateImgPath('treeImg', './assets/bird.jpg')">
+            Image1
+          </button>
+        </div>
+    <script>
+      function updateImgPath(imgId, Path) {
+        const imgPath = document.getElementById(imgId);
+        imgPath.src = Path;
+      }
+    </script>
+  </body>
+</html>
