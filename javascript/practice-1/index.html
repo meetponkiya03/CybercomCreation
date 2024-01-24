@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>java script</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <p id="paraText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore repudiandae deleniti molestias dolores, molestiae inventore accusamus ratione consectetur animi magnam quasi facilis, voluptate beatae vel. Dolore unde itaque quidem.m</p>
+            <input type="button" value="click me" id="change" onclick="changetext()">
+        </div>
+        <script>
+            function changetext()
+            {
+                document.getElementById('paraText').innerHTML = "You pressed button";
+            }
+        </script>
+    </body>
+</html>
