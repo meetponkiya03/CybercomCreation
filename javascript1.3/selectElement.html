@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="selectElement" id="select">
+        this div is use for select element demo
+    </div>
+    <div class="secondDiv" id="second">
+        this div is use for second select element demo
+    </div>
+    <script>
+       const byID = document.getElementById('select').innerHTML;
+       console.log("getElementByID:"+byID);
+
+       const byClass = document.getElementsByClassName('selectElement')[0].innerHTML;
+       console.log("getElementsByClassName:"+byClass);
+
+       const byTag = document.getElementsByTagName('div')[0].innerHTML;
+       console.log("getElementsByTagName:"+byTag);
+
+       const querySelect = document.querySelector('div').innerHTML;
+       console.log("querySelector:"+querySelect);
+
+       const querySelectAll = document.querySelectorAll('div');
+        console.log("querySelectAll:");
+       for (let index = 0; index < querySelectAll.length; index++) {
+        console.log(querySelectAll[index].innerHTML);
+       }
+       
+    </script>
+</body>
+</html>
