@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Node Example</title>
+</head>
+<body>
+
+<div id="exampleElement"></div>
+
+<script>
+  var textNode = document.createTextNode("This is a dynamically created text node.");
+  var exampleElement = document.getElementById("exampleElement");
+  exampleElement.appendChild(textNode);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>milk</li>
+      <li>water</li>
+      <li>bred</li>
+      <li>colgate</li>
+    </ul>
+    <button onclick="replace()">replace child</button>
+    <script>
+      function replace() {
+        let menu = document.getElementById("menu");
+
+        let li = document.createElement("li");
+        li.textContent = "banana";
+
+        menu.replaceChild(li, menu.childNodes[1]);
+      }
+    </script>
+  </body>
+</html>

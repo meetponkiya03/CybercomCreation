@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <p id="child">This is a child element.</p>
+      <button onclick="removeChildElement()">Remove Child Element</button>
+    </div>
+
+    <div>
+      <p id="remove">This is a child element.</p>
+      <button onclick="deleteElement()">Remove Element</button>
+    </div>
+
+    <script>
+      function removeChildElement() {
+        var parentElement = document.getElementById("parent");
+        var childElement = document.getElementById("child");
+        parentElement.removeChild(childElement);
+      }
+      function deleteElement() {
+        const element = document.getElementById("remove");
+        element.remove();
+      }
+    </script>
+  </body>
+</html>
