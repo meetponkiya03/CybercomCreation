@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="txtFirst">hello this is for modify content by innetHTML"</h2>
+    <button id="btn" onclick="modify()">click me</button>
+
+    <p id="txtContentdemo" onclick="txtContentModify()">
+      Click here to change my textual content.
+    </p>
+
+    <h2 id="H2">My Header</h2>
+    <button onclick="add()">Insert</button>
+
+    <script>
+      function modify() {
+        txtFirst = document.getElementById("txtFirst");
+        txtFirst.innerHTML = "change the text by innetHTML";
+      }
+
+      function txtContentModify() {
+        a = document.getElementById("txtContentdemo");
+        a.textContent = "change the text by textContent";
+      }
+
+      function add() {
+        const h2 = document.getElementById("H2");
+        let html = "<span>add span tag</span>";
+        h2.insertAdjacentHTML("afterbegin", html);
+      }
+    </script>
+  </body>
+</html>

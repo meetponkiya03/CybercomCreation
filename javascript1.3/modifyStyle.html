@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .democlass {
+          background-color: red;
+        }
+        .classList{
+            background-color: aqua;
+            padding: 30px;
+            color: white;
+        }
+        .classname{
+            background-color: aqua;
+            padding: 30px;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <h2 class="getattribute" id="H2">The getAttribute() Method</h2>
+
+
+    <h2 id="second">The classlist property</h2>
+    <button onclick="addClass()">Add class</button>
+
+    <h2 id="third">The classname property</h2>
+    <button onclick="addByClassName()">className</button>
+
+    <p id="para">The value of the class attribute of the h2 element is:</p>
+    <p id="demo"></p>
+    <button onclick="changeclass()">set attribute</button>
+    
+
+    <script>
+      element = document.getElementById('H2');
+
+      text = element.getAttribute("class");
+      document.getElementById("demo").innerHTML = text;
+
+      function changeclass(){
+        document.getElementById('para').setAttribute("class","democlass");
+      }
+
+      function addClass(){
+        const list = document.getElementById("second").classList;
+        list.add("classList");
+      }
+
+      function addByClassName(){
+        document.getElementById("third").className = "classname";
+      }
+
+      element.style.backgroundColor = "red";
+
+      console.log(element.classList);
+    </script>
+  </body>
+</html>
