@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add/Edit-Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add Product Form</h2>
+      <form id="productForm">
+        <div class="form-group">
+          <div class="input-group">
+            <lable for="txtTitle">Product Title</lable>
+            <input type="text" name="txtTitle" id="txtTitle" />
+          </div>
+          <div class="input-group">
+            <lable for="numPrice">Price</lable>
+            <input
+              type="number"
+              name="numPrice"
+              id="numPrice"
+              min="0"
+              maxlength="3"
+            />
+          </div>
+        </div>
+        <div class="input-group">
+          <lable for="description">Description</lable>
+          <textarea
+            placeholder="Type Here"
+            rows="5"
+            cols="20"
+            name="txtDescription"
+            id="description"
+          ></textarea>
+        </div>
+        <div class="input-group">
+          <lable for="ddcategory">Category</lable>
+          <select id="ddCategory">
+            <option>Choose..</option>
+            <option value="electronic">electronic</option>
+            <option value="grocery">grocery</option>
+            <option value="clothes">clothes</option>
+          </select>
+        </div>
+        <div class="btn">
+          <button type="submit" onclick="storeData(),displayData()">
+            Save
+          </button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <a href="List.html">Show ListPage</a>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      jQuery("#productForm").validate({
+        rules: {
+          txtTitle: "required",
+          numPrice: "required",
+        },
+        messages: {
+          txtTitle: "please enter the title",
+          numPrice: "please enter price",
+        },
+      });
+    </script>
+  </body>
+</html>
