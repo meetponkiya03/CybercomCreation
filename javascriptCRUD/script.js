@@ -77,7 +77,6 @@ function displayData() {
     tableRow.appendChild(categoryCell);
     tableRow.appendChild(actionCell);
 
-    // Append the row to the table body
     dataTableBody.appendChild(tableRow);
   }
 }
