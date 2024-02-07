@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">To-Do List</h1>
+    </header>
+    <main class="main">
+        <section class="task-details">
+            <h2 class="section-title">Task Details</h2>
+            <form id="task-form" class="task-form">
+                <input type="text" id="title" class="task-input" placeholder="Task Title" required>
+                <textarea id="description" class="task-input" placeholder="Task Description" required></textarea>
+                <input type="date" id="due-date" class="task-input" required>
+                <select id="priority" class="task-input" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit" id="submitBtn" class="btn-add-task" onclick="addTask()">Add Task</button>
+            </form>
+        </section>
+    </main>
+    <section class="navigate">
+        <a href="task.html">View task details</a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
