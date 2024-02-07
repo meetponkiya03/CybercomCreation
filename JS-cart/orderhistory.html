@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="productlist.html">Current Order</a>
+      <a href="orderhistory.html">Order History</a>
+    </header>
+    <div class="container">
+      <table>
+          <thead>
+              <tr>
+                  <th>Product Name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+              </tr>
+          </thead>
+          <tbody id="data-table">
+            
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total + 18% GST</td>
+              <td id="total-price">RS.0/-</td> 
+            </tr>
+          </tfoot>
+      </table>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
