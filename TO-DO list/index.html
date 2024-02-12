@@ -23,12 +23,28 @@
                     <option value="high">High</option>
                 </select>
                 <button type="submit" id="submitBtn" class="btn-add-task" onclick="addTask()">Add Task</button>
+                <button type="reset" id="submitBtn" class="btn-add-task" >Cancle</button>
             </form>
         </section>
+        <section class="task-table">
+            <h2 class="section-title">Task Details</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Due-Date</th>
+                  <th>Priority</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody  id="taskTable"></tbody>
+            </table>
+          </section>
     </main>
-    <section class="navigate">
-        <a href="task.html">View task details</a>
-    </section>
+    <main class="main">
+        
+      </main>
     <script src="script.js"></script>
 </body>
 </html>
