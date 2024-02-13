@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./assets/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <form id="registerForm">
+            <h2>Register</h2>
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" >
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" >
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" >
+            </div>
+            <div class="input-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" >
+                    <option value="">Select Role</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="patient">Patient</option>
+                </select>
+            </div>
+            <button type="submit" onclick="registerUser()">Register</button>
+            <button type="button" onclick="location.href='login.html';">Log in</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
