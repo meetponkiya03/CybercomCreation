@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patient Dashboard</title>
-    <link rel="stylesheet" href="./assets/patientDashbord.css" />
+    <link rel="stylesheet" href="./assets/styles/patientDashbord.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Welcome</h1>
-      <h2>Book an Appointment</h2>
+      <h1>Welcome,patient Book an Appointment</h1>
       <form id="appointmentForm">
         <input type="date" id="date" name="date" required />
         <input type="time" id="time" name="time" required />
@@ -27,6 +26,8 @@
 
       </div>
     </div>
-    <script src="patient.js"></script>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    <script src="./assets/src/patient.js"></script>
+    <script src="./assets/src/logout.js"></script>
   </body>
 </html>

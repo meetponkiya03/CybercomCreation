@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Dashboard</title>
-    <link rel="stylesheet" href="./assets/doctorDashboard.css">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="./assets/styles/doctorDashboard.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome,Doctor</h1>
-        <h2>Your Scheduled Appointments</h2>
-        <div class="appointments">
-            
-        </div>
+    <h1>welcome,Doctor book your sloat</h1>
+    <form id="appointmentForm">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="time">Time Starting time:</label>
+        <select id="startTime" name="startTime" required>
+            <option value="">Select Time Slot</option>
+            <option value="9:00">9:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+        </select><br><br>
+        <label for="time">Time ending time:</label>
+        <select id="endTime" name="endTime" required>
+            <option value="">Select Time Slot</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="1:00">1:00 PM</option>
+            <option value="2:00">2:00 PM</option>
+            <option value="3:00">3:00 PM</option>
+            <option value="4:00">4:00 PM</option>
+            <option value="5:00">5:00 PM</option>
+        </select><br><br>
+        <button type="submit" onclick="bookSlot()">Book sloat</button>
+    </form>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    <h1>Your appointments</h1>
+    <div id="appointments">
+
     </div>
-    <script src="doctor.js"></script>
+    <script src="./assets/src/doctor.js"></script>
+    <script src="./assets/src/logout.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="./assets/styles/login.css">
 </head>
 <body>
     <div class="login-container">
@@ -26,10 +26,10 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter Password">
             </div>
-            <button type="submit" onclick="loginUser()">Login</button>
+            <button type="submit" onclick="loginUser(event)">Login</button>
             <button type="button" onclick="location.href='register.html';">Register</button>
         </form>
     </div>
-    <script src="login.js"></script>
+    <script src="./assets/src/register_login.js"></script>
 </body>
 </html>
