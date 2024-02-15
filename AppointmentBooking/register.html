@@ -13,14 +13,17 @@
             <div class="input-group">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname" >
+                <span class="error"></span>
             </div>
             <div class="input-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" >
+                <span class="error"></span>
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" >
+                <span class="error"></span>
             </div>
             <div class="input-group">
                 <label for="role">Role</label>
@@ -29,8 +32,9 @@
                     <option value="doctor">Doctor</option>
                     <option value="patient">Patient</option>
                 </select>
+                <span class="error"></span>
             </div>
-            <button type="submit" onclick="registerUser()">Register</button>
+            <button type="submit" onclick="registerUser(event)">Register</button>
             <button type="button" onclick="location.href='login.html';">Log in</button>
         </form>
     </div>
