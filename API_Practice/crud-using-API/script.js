@@ -10,6 +10,7 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     renderEmployee(data);
+    console.log(data);
   });
 
 const renderEmployee = (data) => {
@@ -17,6 +18,7 @@ const renderEmployee = (data) => {
     //console.log(employee)
     output += ` <div class="card col-md-3 mt-4" id="employee-${employee.id}">
         <div class="card-body">
+          <img class="card-img-top" src="${employee.Image}" alt="Card image cap">
           <h5 class="card-title">Name: ${employee.name}</h5>
           <h5 class="card-title">Job: ${employee.Job}</h5>
           <h5 class="card-title">Education: ${employee.Education}</h5>
