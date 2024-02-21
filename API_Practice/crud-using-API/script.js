@@ -10,18 +10,17 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     renderEmployee(data);
-    console.log(data);
   });
 
 const renderEmployee = (data) => {
   data.forEach((employee) => {
     //console.log(employee)
-    output += ` <div class="card col-md-3 mt-4" id="employee-${employee.id}">
+    output += ` <div class="card col-md-2 mt-4" id="employee-${employee.id}">
         <div class="card-body">
           <img class="card-img-top" src="${employee.Image}" alt="Card image cap">
-          <h5 class="card-title">Name: ${employee.name}</h5>
-          <h5 class="card-title">Job: ${employee.Job}</h5>
-          <h5 class="card-title">Education: ${employee.Education}</h5>
+          <h5 class="card-title">Name : ${employee.name}</h5>
+          <h5 class="card-title">Job : ${employee.Job}</h5>
+          <h5 class="card-title">Education : ${employee.Education}</h5>
           <a href="#" class="card-link" id="editEmp" onclick="editEmployee(${employee.id})">Edit</a>
           <a href="#" class="card-link" id="deleteEmp" onclick="deleteEmployee(${employee.id})">Delete</a>
         </div>
@@ -44,6 +43,7 @@ const addEmployee = (event) => {
   })
     .then((res) => res.json())
     .then((data) => {
+      //console.log(data);
       const dataArr = [];
       dataArr.push(data);
       renderEmployee(dataArr);
@@ -85,7 +85,7 @@ const editEmployee = (employeeId) => {
     });
   addEmployeeForm.removeEventListener("submit", addEmployee);
   addEmployeeForm.addEventListener("submit", (event) => {
-      event.preventDefault();
+      event.preventDefault(); 
       fetch(editUrl, {
         method: "PUT",
         headers: {
