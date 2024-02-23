@@ -187,4 +187,3 @@ const editQuote = (id) => {
     alert("Quote not found in local storage.you can not edit this.");
   }
 };
-
