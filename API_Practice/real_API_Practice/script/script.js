@@ -146,9 +146,32 @@ const sortFunction = () => {
   }
 
   productsData = sortedProducts;
-  //console.log(productsData);
   
   currentPage = 1;
   renderProducts(currentPage);
   renderPagination();
 };
+const fetchCategories = async () => {
+  try {
+      const response = await fetch('https://api.escuelajs.co/api/v1/categories');
+      if (!response.ok) {
+          throw new Error('Failed to fetch categories');
+      }
+      const categories = await response.json();
+      populateDropdown(categories);
+  } catch (error) {
+      console.error('Error fetching categories:', error);
+  }
+};
+
+const populateDropdown = (categories) => {
+  const categoryFilter = document.getElementById('categoryFilter');
+  categories.forEach(category => {
+      const option = document.createElement('option');
+      option.value = category.id;
+      option.textContent = category.name;
+      categoryFilter.appendChild(option);
+  });
+};
+
+document.addEventListener('DOMContentLoaded', fetchCategories);

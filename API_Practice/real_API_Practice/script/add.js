@@ -43,10 +43,10 @@ function validateProductDescription() {
 function validateProductCategoryId() {
   var productCategoryIdInput = document.getElementById("productCategoryId");
   var productCategoryIdError = document.getElementById("categoryIdError");
-  var productCategoryId = productCategoryIdInput.value.trim();
+  var productCategoryId = productCategoryIdInput.value;
 
-  if (productCategoryId === "") {
-    productCategoryIdError.textContent = "Please enter a valid category ID";
+  if (!productCategoryId) {
+    productCategoryIdError.textContent = "Please select a category";
     return false;
   } else {
     productCategoryIdError.textContent = "";
@@ -77,6 +77,28 @@ function validateForm() {
 
   return isProductTitleValid && isProductPriceValid && isProductDescriptionValid && isProductCategoryIdValid && isProductImageValid;
 }
+
+const fetchCategories = async () => {
+  try {
+      const response = await fetch("https://api.escuelajs.co/api/v1/categories");
+      if (!response.ok) {
+          throw new Error("Failed to fetch categories");
+      }
+      const data = await response.json();
+      const selectElement = document.getElementById("productCategoryId");
+      data.forEach(category => {
+          const option = document.createElement("option");
+          option.value = category.id;
+          option.textContent = category.name;
+          selectElement.appendChild(option);
+      });
+  } catch (error) {
+      console.error("Error fetching categories:", error);
+  }
+};
+
+document.addEventListener("DOMContentLoaded", fetchCategories);
+
 const clear = () =>{
   alert('Data added successfully ');
   document.getElementById("productTitle").value="";

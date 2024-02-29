@@ -194,7 +194,6 @@ h2 {
   }
   .search-container {
     margin-left: 900px ;
-    margin-bottom: 0px;
     width: 400px;
     text-align: center;
 }
@@ -217,3 +216,42 @@ h2 {
 .search-container button:hover {
     background-color: #0056b3;
 }
+.sorting-container {
+    margin-top: 20px;
+  }
+  
+  .sorting-container label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .sorting-container select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .filter-container {
+    margin-bottom: 20px;
+}
+
+#categoryFilter {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#categoryFilter option {
+    background-color: #fff;
+    color: #333;
+}
+#categoryFilter option:hover {
+    background-color: #f0f0f0;
+}
+/* #categoryFilter:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border-color: rgba(81, 203, 238, 1);
+} */
