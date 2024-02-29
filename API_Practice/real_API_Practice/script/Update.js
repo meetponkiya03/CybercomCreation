@@ -74,11 +74,17 @@ const fillFormWithProductDetails = (product) => {
   document.getElementById("productDescription").value = product.description;
 };
 
+const clear = ()=>{
+  alert("Product data updated successfully");
+  document.getElementById("productTitle").value="";
+  document.getElementById("productPrice").value="";
+  document.getElementById("productDescription").value="";
+}
+
 const submitUpdatedProduct = (productId) => {
-  const productTitle = document.getElementById("productTitle").value;
-  const productPrice = document.getElementById("productPrice").value;
-  const productDescription =
-    document.getElementById("productDescription").value;
+  let productTitle = document.getElementById("productTitle").value;
+  let productPrice = document.getElementById("productPrice").value;
+  let productDescription = document.getElementById("productDescription").value;
 
   const url = `https://api.escuelajs.co/api/v1/products/${productId}`;
   const data = {
@@ -98,7 +104,8 @@ const submitUpdatedProduct = (productId) => {
       if (!response.ok) {
         throw new Error("Failed to update product data");
       }
-      alert("Product data updated successfully");
+      clear()
+      
     })
     .catch((error) => {
       console.error("Error updating product data:", error);
@@ -106,6 +113,10 @@ const submitUpdatedProduct = (productId) => {
         "An error occurred while updating product data. Please try again later."
       );
     });
+
+    productTitle = "";
+    productPrice = "";
+    productDescription = "";
 };
 
 function submitForm() {

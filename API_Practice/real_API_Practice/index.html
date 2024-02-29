@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real API Practice</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="title">
-            <h2>Product List</h2>
-            <button id="addProductBtn"><a href="Add.html">Add Product</a></button>
-        </div>
-        <div class="allProducts">
-           <!-- product cards -->
-        </div>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Product List</h1>
+      <button id="addProductBtn"><a href="Add.html">Add Product</a></button>
     </div>
+    <div class="search-container">
+      <form>
+        <input type="text" placeholder="Search..." name="search" id="search" />
+        <button type="button" onclick="searchProducts()">Search</button>
+      </form>
+    </div>
+    <div class="sorting-container">
+      <label for="sortingDropdown">Sort By:</label>
+      <select id="sortingDropdown" onchange="sortFunction()">
+        <option value="default">Select One</option>
+        <option value="low">low to high</option>
+        <option value="high">high to low</option>
+      </select>
+    </div>
+    <div class="container">
+      <h1 id="noDataMessage"></h1>
+      <div class="allProducts">
+        <!-- product list -->
+      </div>
+    </div>
+    <ul class="pagination">
+      <!-- Pagination -->
+    </ul>
+
     <script src="./script/script.js"></script>
-</body>
+  </body>
 </html>

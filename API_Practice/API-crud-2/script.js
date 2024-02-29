@@ -25,7 +25,7 @@ const fetchData = () => {
     .then((data) => {
       hideSpinner();
       let quotelocalData =
-        JSON.parse(localStorage.getItem(localStorageKey)) || [];
+      JSON.parse(localStorage.getItem(localStorageKey)) || [];
       quotesData = [...data.quotes, ...quotelocalData];
       quotesData = quotesData.sort((a, b) => a.author.localeCompare(b.author));
       renderQuotes(currentPage);

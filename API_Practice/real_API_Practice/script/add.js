@@ -77,14 +77,21 @@ function validateForm() {
 
   return isProductTitleValid && isProductPriceValid && isProductDescriptionValid && isProductCategoryIdValid && isProductImageValid;
 }
-
-function addDataToAPI(productId) {
+const clear = () =>{
+  alert('Data added successfully ');
+  document.getElementById("productTitle").value="";
+  document.getElementById("productPrice").value="";
+  document.getElementById("productDescription").value="";
+  document.getElementById("productCategoryId").value="";
+  document.getElementById("productImage").value="";
+}
+function addDataToAPI() {
   var productTitle = document.getElementById("productTitle").value;
   var productPrice = document.getElementById("productPrice").value;
   var productDescription = document.getElementById("productDescription").value;
   var productCategoryId = document.getElementById("productCategoryId").value;
   var productImage = document.getElementById("productImage").value;
-
+  
   fetch(" https://api.escuelajs.co/api/v1/products/", {
     method: 'POST',
     headers: {
@@ -106,7 +113,8 @@ function addDataToAPI(productId) {
     }
   })
   .then( 
-    alert('Data added successfully: ')
+    clear(),
+     
   )
   .catch(error => {
     alert('Error adding data: ' + error.message);
